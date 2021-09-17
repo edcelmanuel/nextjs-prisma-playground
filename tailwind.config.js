@@ -1,7 +1,7 @@
 module.exports = {
-    // mode: "jit",
+    mode: "jit",
     purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
-    darkMode: false, // or 'media' or 'class'
+    darkMode: "class", // or 'media' or 'class'
     theme: {
         extend: {
             fontFamily: {
@@ -276,7 +276,7 @@ module.exports = {
         },
     },
     variants: {
-        extend: {},
+        extend: { filter: ["hover", "focus"], grayscale: ["hover", "focus"], contrast: ["hover", "focus"] },
     },
     plugins: [],
 }

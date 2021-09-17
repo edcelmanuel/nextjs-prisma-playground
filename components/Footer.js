@@ -1,9 +1,9 @@
 const Footer = () => {
     return (
-        <footer className="pt-10 pb-5 text-gray-600 bg-gray-50">
+        <footer className="pt-10 pb-5 text-gray-600 bg-gray-50 dark:bg-gray-900">
             <div className="grid grid-cols-8">
                 <div className="grid grid-cols-6 col-span-6 col-start-2 gap-y-4">
-                    <div
+                    {/* <div
                         className="col-span-full text-primary hover:text-gray-900 dark:hover:text-white"
                         aria-label="Go to homepage"
                         href="/"
@@ -20,21 +20,21 @@ const Footer = () => {
                                 fill="#1A1B21"
                             />
                         </svg>
-                    </div>
+                    </div> */}
                     <ul className="col-span-3 md:col-span-2 lg:col-span-1">
                         <li className="font-semibold text-[14px] text-gray-600">Company</li>
                         <li className="pt-1.5 text-xs ">
-                            <div className="text-gray-900" href="/about">
+                            <div className="text-gray-900 dark:text-white" href="/about">
                                 About Us
                             </div>
                         </li>
                         <li className="pt-1.5 text-xs ">
-                            <div className="text-gray-900" href="/careers">
+                            <div className="text-gray-900 dark:text-white" href="/careers">
                                 Careers
                             </div>
                         </li>
                         <li className="pt-1.5 text-xs ">
-                            <div className="text-gray-900" href="/blog">
+                            <div className="text-gray-900 dark:text-white" href="/blog">
                                 Blog
                             </div>
                         </li>
@@ -42,22 +42,26 @@ const Footer = () => {
                     <ul className="col-span-3 md:col-span-2 lg:col-span-1">
                         <li className="font-semibold text-[14px] text-gray-600">Products</li>
                         <li className="pt-1.5 text-xs ">
-                            <div className="text-gray-900" rel="nofollow" href="https://app.planetscale.com/">
+                            <div
+                                className="text-gray-900 dark:text-white"
+                                rel="nofollow"
+                                href="https://app.planetscale.com/"
+                            >
                                 Login / Signup
                             </div>
                         </li>
                         <li className="pt-1.5 text-xs ">
-                            <div className="text-gray-900" href="/cli">
+                            <div className="text-gray-900 dark:text-white" href="/cli">
                                 CLI
                             </div>
                         </li>
                         <li className="pt-1.5 text-xs ">
-                            <div className="text-gray-900" href="/pricing">
+                            <div className="text-gray-900 dark:text-white" href="/pricing">
                                 Pricing
                             </div>
                         </li>
                         <li className="pt-1.5 text-xs ">
-                            <div className="text-gray-900" href="/changelog">
+                            <div className="text-gray-900 dark:text-white" href="/changelog">
                                 Changelog
                             </div>
                         </li>
@@ -65,18 +69,22 @@ const Footer = () => {
                     <ul className="col-span-3 md:col-span-2 lg:col-span-1">
                         <li className="font-semibold text-[14px] text-gray-600">Open Source</li>
                         <li className="pt-1.5 text-xs ">
-                            <div className="text-gray-900" href="/vitess">
+                            <div className="text-gray-900 dark:text-white" href="/vitess">
                                 Vitess
                             </div>
                         </li>
                         <li className="pt-1.5 text-xs ">
-                            <div className="text-gray-900" rel="nofollow" href="https://vitess.io/slack">
+                            <div
+                                className="text-gray-900 dark:text-white"
+                                rel="nofollow"
+                                href="https://vitess.io/slack"
+                            >
                                 Community
                             </div>
                         </li>
                         <li className="pt-1.5 text-xs ">
                             <div
-                                className="text-gray-900"
+                                className="text-gray-900 dark:text-white"
                                 rel="nofollow"
                                 href="https://github.com/planetscale/vitess-releases/releases"
                             >
@@ -87,12 +95,16 @@ const Footer = () => {
                     <ul className="col-span-3 md:col-span-2 lg:col-span-1">
                         <li className="font-semibold text-[14px] text-gray-600">Support</li>
                         <li className="pt-1.5 text-xs ">
-                            <div className="text-gray-900" href="/support">
+                            <div className="text-gray-900 dark:text-white" href="/support">
                                 Open Support Ticket
                             </div>
                         </li>
                         <li className="pt-1.5 text-xs ">
-                            <div className="text-gray-900" rel="nofollow" href="https://planetscale.freshstatus.io/">
+                            <div
+                                className="text-gray-900 dark:text-white"
+                                rel="nofollow"
+                                href="https://planetscale.freshstatus.io/"
+                            >
                                 Status
                             </div>
                         </li>
@@ -100,10 +112,10 @@ const Footer = () => {
                     <ul className="col-span-3 md:col-span-2 lg:col-span-1">
                         <li className="font-semibold text-[14px] text-gray-600">Talk to us</li>
                         <li className="pt-1.5 text-xs ">
-                            <span className="text-gray-900">Call +1 408 214 1997</span>
+                            <span className="text-gray-900 dark:text-white">Call +1 408 214 1997</span>
                         </li>
                         <li className="pt-1.5 text-xs ">
-                            <div className="text-gray-900" href="/contact">
+                            <div className="text-gray-900 dark:text-white" href="/contact">
                                 Contact Sales
                             </div>
                         </li>
@@ -163,7 +175,7 @@ const Footer = () => {
                                 name="email"
                                 aria-label="Enter your email to subscribe to our newsletter"
                                 spellCheck="false"
-                                className="flex-1 mr-2 text-xs text-gray-900 bg-transparent border-b border-gray-400 outline-none"
+                                className="flex-1 mr-2 text-xs text-gray-900 bg-transparent border-b border-gray-400 outline-none dark:text-white"
                                 placeholder="Get our newsletter"
                                 required
                             />
@@ -176,10 +188,16 @@ const Footer = () => {
                         </form>
                         <div className="flex flex-wrap justify-between pt-5 text-xs">
                             <div>
-                                <div className="font-semibold pr-2.5 text-gray-900" href="/legal/privacy">
+                                <div
+                                    className="font-semibold pr-2.5 text-gray-900 dark:text-white"
+                                    href="/legal/privacy"
+                                >
                                     Privacy
                                 </div>
-                                <div className="font-semibold pr-2.5 text-gray-900" href="/legal/siteterms">
+                                <div
+                                    className="font-semibold pr-2.5 text-gray-900 dark:text-white"
+                                    href="/legal/siteterms"
+                                >
                                     Terms
                                 </div>
                             </div>
